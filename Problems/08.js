@@ -1,17 +1,27 @@
-//. Rock-paper-scissors:
-// Given player1 and player2's choice, print the winner or draw
-
-let player1 = prompt("Player1: Enter your choice (rock, paper, scissors");
-let player2 = prompt("Player2: Enter your choice (rock, paper, scissors");
-
-if (player1 === player2) {
-    console.log("It's a draw!");
-  } else if (
-    (player1 === "rock" && player2 === "scissors") ||
-    (player1 === "scissors" && player2 === "paper") ||
-    (player1 === "paper" && player2 === "rock")
-  ) {
-    console.log("Player 1 wins!");
-  } else {
-    console.log("Player 2 wins!");
+// 🔁 Chapter 5: Loops
+// . Print 1 to 10 using for
+for(let i = 1; i <= 10; i++){
+  // console.log(i);
+}
+// . Print even numbers between 1 to 20
+for(let i = 1; i <= 20; i++){
+  if(i%2===0){
+    // console.log(i);
   }
+}
+// .Reverse a string using a loop
+let str = "hello";
+let reverse = "";
+
+for (let i = str.length-1; i>=0; i--){
+  reverse += str[i];
+}
+console.log(reverse);
+
+// . Sum of all numbers in an array
+// . Print all characters of a name using for-of
+// . Print all object keys and values using for-in
+// . Use continue to skip a specific number
+// . Guess number game – use while to ask until correct
+// . Pattern: Print a triangle using *
+// . Sum of even numbers in an array using forEach
