@@ -65,5 +65,47 @@ for(let key in course){
     console.log(key);
 }
 
-// Use Object.assign() to print all key-value pairs as: 
+// Use Object.entries() to print all key-value pairs as:
+// title: JavaScript
+// duration: 4 weeks
+
+const courses = {
+    title: "Javascript",
+    duration: "4 weeks"
+}
+Object.entries(courses).forEach(function(val){
+    // console.log(val);
+    console.log(val[0] + " : " + val[1]);
+});
+
+// Copy the original objects
+let original = { a : 1 , b : 2 };
+let copy = {...original};
+console.log(copy)
+
+//
+const obj1 = { info: { score: 80 } };
+// const clone = { ...obj1 };
+// clone.info.score = 100;
+// console.log(obj1.info.score); // 100
+
+// deep clone the obj1 saftely
+let newObj = JSON.parse(JSON.stringify(obj1));
+newObj.info.score = 100;
+console.log(obj1);
+console.log(newObj)
+
+// Rewrite this safely using optional chaining:
+const person = {};
+// console.log(person.profile.name); // X
+console.log(person?.profile?.name);
+
+// Use a variable to dynamically assign a property
+const keys = "role";
+let oj = {
+    name : "Ayush",
+    [key] : "admin",
+};
+console.log(oj);
+
 
