@@ -93,3 +93,55 @@ let ans = arr7.reduce(function(accumulator , val){
     return accumulator + val;
 },0);
 console.log(ans);
+
+// find
+let arr8 = [1,2,3,4,5,1];
+let va = arr8.find(function(val){
+    return val === 1;
+})
+console.log(va);    
+
+let arr9 = [
+    { id: 1, key: 1},
+    { id: 2, key: 2},
+    { id: 3, key: 1}
+];
+let va1 = arr9.find(function(val){
+    return val.key === 1;
+});
+console.log(va1);
+
+let score = [10, 30, 32, 90];
+let any = score.some(function(val){
+    return val > 85;
+});
+console.log(any);
+
+// every
+let eve = [10, 30, 32, 90];
+let eveAns = eve.every(function(val){
+    return val > 5;
+});
+console.log(eveAns);
+
+// Array Destructuring
+let des = [1,2,3,4,5]
+// let [a,b] = des ;
+// console.log(a);
+// console.log(b);
+
+let [a, b, , d] = des;
+console.log(a);
+console.log(b);
+console.log(d);
+
+// spread 
+let spd = [1,2,3,4,5,6,7,8,9];
+let spd2 = [...spd];
+console.log(spd);
+console.log(spd2);
+
+spd2.pop();
+
+console.log(spd2)
+
