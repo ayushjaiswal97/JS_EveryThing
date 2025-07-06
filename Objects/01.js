@@ -49,10 +49,21 @@ console.log(user1[key]);
  console.log(city);
  console.log(lat);
 
- // Destructure the key "first-name" as a variable called
-firstName.
+ // Destructure the key "first-name" as a variable called firstName.
 const users = {
 "first-name": "Harsh",
 };
+let { "first-name": firstName } = users;
+console.log(firstName);
 
+// Use for-in to log all keys in this object:
+const course = {
+title: "JavaScript",
+duration: "4 weeks",
+};
+for(let key in course){
+    console.log(key);
+}
+
+// Use Object.assign() to print all key-value pairs as: 
 
