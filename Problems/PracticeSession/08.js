@@ -16,12 +16,24 @@ let reverse = "";
 for (let i = str.length-1; i>=0; i--){
   reverse += str[i];
 }
-console.log(reverse);
+// console.log(reverse);
 
 // . Sum of all numbers in an array
+let arr = []
+
 // . Print all characters of a name using for-of
+
+
 // . Print all object keys and values using for-in
+
+
 // . Use continue to skip a specific number
+
+
 // . Guess number game – use while to ask until correct
+
+
 // . Pattern: Print a triangle using *
+
+
 // . Sum of even numbers in an array using forEach
