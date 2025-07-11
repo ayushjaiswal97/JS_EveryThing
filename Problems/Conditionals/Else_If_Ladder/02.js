@@ -19,11 +19,14 @@ if(marks > 90){
     console.log("Wrong Input");
 }
 // Based on temperature:
-
 // >= 35: "Too hot"
-
 // >= 20: "Normal"
-
 // < 20: "Cold"
-
-//  
+let temp = -2;
+if(temp >= 35){
+    console.log("Too Hot");
+} else if(temp >= 20){
+    console.log("normal");
+} else if(temp < 20){
+    console.log("Cold");
+}

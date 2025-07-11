@@ -7,13 +7,14 @@ console.dir(abcd);
 let paras = document.getElementsByClassName('para');
 console.log(paras);
 
+// getElementsByTagName
+const divs = document.getElementsByTagName("div");
+console.log(divs);
+
 // .querySelector()
 let ab = document.querySelector("h1");
 console.dir(ab);
 
-// .
+// .querySelectorAll()
 let cd = document.querySelectorAll('h2');
 console.dir(cd)
-
-const divs = document.getElementsByTagName("div");
-console.log(divs);

@@ -1,23 +1,27 @@
 // let a = document.querySelector("a");
-// a.href = "https://www.google.com";
-// console.log(a);
+// a.href = "http://www.google.com"; //
 
-// setAttribute("","");
-// let img = document.querySelector("img");
-// img.setAttribute(
-//     "src",
-//    "https://plus.unsplash.com/premium_photo-1750041453770-ca6d200405a4?q=80&w=698&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-// );
+// getAttribute, setAttribute, removeAttribute
 
-//getAttribute(());
-// let a = document.querySelector("a");
-// console.log(a.getAttribute("href"));
+// setAttribute
+let a1 = document.querySelector("a");
+a1.setAttribute('a', 'http://www.google.com');
+
+let img = document.querySelector('img');
+img.setAttribute("src",
+    "https://images.unsplash.com/photo-1751601727553-8bd4ad69f6b4?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+)
+
+
+// getAttribute
+// let a2 = document.querySelector("a");
+// console.log(a2.getAttribute("href"));
 
 // removeAttribute
-// let a = document.querySelector("a");
-// console.log(a.removeAttribute("href"));
+let a = document.querySelector("a");
+a.removeAttribute("href");
 
 // .hasAttribute()
-let img = document.querySelector("img");
-console.log(img.hasAttribute("src"));
-console.log(img.hasAttribute("style"));
+let img1 = document.querySelector("img");
+console.log(img1.hasAttribute("src"));
+console.log(img1.hasAttribute("style"));

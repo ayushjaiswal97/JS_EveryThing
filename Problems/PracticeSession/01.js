@@ -44,3 +44,23 @@ if(x > 5 && y < 25){
 } else{
     console.log("B");
 }
+
+//  Bonus Challenge
+// 👉 Create a number guessing game:
+// User provides a guess (hardcode it for now)
+// The correct number is 7
+// If the guess is right: "Correct!"
+// If higher: "Too high"
+// If lower: "Too low"
+
+let guess = 7;
+let target = 7;
+
+if(guess == target){
+    console.log("Coreect");
+} else if(guess > target){
+    console.log("Too High");
+} else{
+    console.log("Too Low")
+}
+
