@@ -23,7 +23,12 @@ console.log(isArrayPalindrome([1,3,2,1]));
 
 
 // 24.Rotate an array to the right by one place.
+let rotate = [1, 2, 3, 4, 5];
 
+let last = rotate.pop();     // Remove last element (5)
+rotate.unshift(last);        // Insert 5 at the beginning
+
+console.log(rotate); 
 
 // 25.Count the number of times each element appears in an array.
 
