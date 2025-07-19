@@ -31,6 +31,21 @@ rotate.unshift(last);        // Insert 5 at the beginning
 console.log(rotate); 
 
 // 25.Count the number of times each element appears in an array.
+const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+
+const count = {};
+
+for (let i = 0; i < fruits.length; i++) {
+    const item = fruits[i];
+    if (count[item]) {
+        count[item]++;
+    } else {
+        count[item] = 1;
+    }
+}
+
+console.log(count);
+
 
 // 26.Flatten a nested array (only one level deep).
 
