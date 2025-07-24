@@ -19,7 +19,12 @@ for (let i = str.length-1; i>=0; i--){
 // console.log(reverse);
 
 // . Sum of all numbers in an array
-let arr = []
+let arr = [1,2,3,4,5];
+let sum = 0;
+for(let i = 0; i < arr.length; i++){
+  sum += arr[i];
+}
+console.log(sum); // 15
 
 // . Print all characters of a name using for-of
 
