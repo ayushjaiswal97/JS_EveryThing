@@ -27,7 +27,10 @@ for(let i = 0; i < arr.length; i++){
 console.log(sum); // 15
 
 // . Print all characters of a name using for-of
-
+let name = "Ayush";
+for(let char of name){
+  console.log(char);
+}
 
 // . Print all object keys and values using for-in
 
