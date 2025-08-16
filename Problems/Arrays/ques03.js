@@ -47,7 +47,10 @@ for (let i = 0; i < fruits.length; i++) {
 console.log(count);
 
 
-// 26.Flatten a nested array (only one level deep).
+// 26.Flatten a nested array (only one level deep)
+let nestedArray = [[1, 2], [3, 4], [5, 6]];
+let flattenedArray = [].concat(...nestedArray);
+console.log(flattenedArray);
 
 // 27.Find the second largest number in an array.
 
